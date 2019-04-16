@@ -1,0 +1,103 @@
+1. public class
+2. public static void main(String[] args)
+3. curly brackets
+4. actual code
+5. semicolon
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+
+//running shit
+jacav HelloWorld.java
+java Helloworld
+
+
+//git
+git init - tells the git version control system that we want to track the history of the current directory
+git add - tracks file; directs photographer's attention to picture that will be taken
+		multiple adds adds more objects to photo that will be taken
+git commit -m MESSAGE    commit means photographer takes polaroid photo, polaroid is now a save point, message tells what changes commit makes to code REMEMBER TO HAVE MESSAGE IN ""
+git status - things shown in red are items photographer hasn't included, reminding you that they're not there
+git log - actually shows you log of what you've done
+	to go more in depth with each commit, do git show [commit ID number]
+
+	git show would automatically show u earliest version
+git checkout - goes through polaroids and chooses polaroid to arrange objects same way as that picture
+
+How to get earliest version of a file?
+	git checkout [commit ID number] [file name]
+	REMEMBER FILE NAME OR ELSE IT'LL REMOVE HEAD
+	(might wanna git log first to see which commit u wanna revert back to)
+how do u save repo and directory?
+git cat - shows actual shit written in file
+**submitting all the work:
+add, commit push
+git push origin master - push changes to master branch on origin remote repo
+
+//lec 2
+every method needs class
+every class needs a main method e.g. 
+	public static void main(String[] args)
+
+nonstatic can take variables static can't
+static does not look at variables that are mine
+in java "this" refers to current object/current instance
+can think of "this" as "self" in python
+
+you can have static and nonstatic variables too (variable common to all)
+
+//Lec 3 1/28
+primitive and reference types
+slide 33 walrus
+
+public class int get(int i) {
+	if (i==0){
+		return L.first;
+	}
+	return L.rest.get(i-1);
+	}
+
+//Project 0
+set each instance attribute (e.g. xxPos) to a different parameter (double xP, double yP, etc. is constructor)
+
+public class Human {. <-- object with bunch of attri
+	public string name; <-- instance variable
+	public int age;
+}
+
+public void Human(string naame, int number){  <-- constructor (initializes instance of class)
+	name = naame;							similar to method but nOT a method; you can tell its not method since it says Human)
+	age = number;							a constructor is essentially a function w/ parameters and all, and depending what you put into param it'll make a new instance of  								 			human using those parameters
+}											syntax: public void (or int or whatever) method_name() {
+
+
+Human(Janet, 19)
+new Human(Janet, 19)
+
+public void do_thing() { <-- method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

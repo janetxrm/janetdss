@@ -1,0 +1,163 @@
+<!doctype html> 
+<html> 
+	<head> 
+		<link rel="stylesheet" type="text/css" href="case-study.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	</head>
+
+	<body>
+			
+		<aside class = "side">
+            	<div id = "sidetext">
+	            	<a href="index.html">< Back </a>
+	            	<p> &nbsp; </p>
+	            	<a id = "desc">Role: Product Design</a>
+	            	<a id = "desc">Time: 5 months</a>
+	            	<a id = "desc">Team: Jemma Kwak</a>
+	            	<p> &nbsp; </p>
+	            	<li><a href = "#Problem">Problem</a></li>
+	            	<li><a href = "#Research">Research</a></li>
+	            	<li><a href = "#Goal">Goal</a></li>
+	            	<li><a href = "#Iterations &#38; User Testing">Iterations &#38; User Testing</a></li>
+	            	<li><a href = "#Final Design">Final Design</a></li>
+	            	<li><a href = "#Results">Results</a></li>
+	             </div>
+    	</aside>
+
+            <div class = "content">
+            	<h3> Berkeleytime </h3>
+
+	    		<p id = "top-desc"> I'm a product designer for <a id = "intextlink" href="https://berkeleytime.com/" target="_blank">Berkeleytime</a>, a website used by 26k+ Berkeley students for course exploration that gets 170k+ visitors per year. In this project, I worked with a web engineer and another designer to make the site compatible across all devices. </p>
+
+	    		<div id = "animate">
+			    		<img src = "assets/bt-hero.png" id = "hero-img"/>
+
+			    		<section id= "Problem">
+			            	<h1>Problem</h1>
+			            	<p><span>Choosing classes at UC Berkeley is a time-consuming and frustrating process.</span> This is due to many factors students face, some of which include frustratingly long waitlists, a lack of grading transparency, and a lot of pressure choosing the right classes to graduate on time.</p>
+							<p>As a team of student volunteers, our mandate was simple for this project: do whatever we can to <span>simplify the course discovery process.</span></p>
+			            </section>
+
+			            <section id= "Research">
+			            	<h1>Research</h1>
+			            	<p>We started off with a generative research study, interviewing current Berkeley students and learning more about their experiences choosing and enrolling for classes. </p>
+
+			            	<div class = "quotes-faces">
+			            		<div id = "quote-face">
+			            			<p id = "quote">&#34;I spent hours finding the right class to take but found out there were no more open seats the moment I tried to enroll. Now I have to find an alternative and do my research all over again.&#34;</p>
+			            			<img src = "assets/bald.png" id = "person"/>
+			            		</div>
+
+			            		<div id = "quote-face">
+			            			<p id = "quote">&#34;Last year I had to create a backup to the backup of my ideal schedule because I knew enrollment would be unpredictable once it started.&#34;</p>
+			            			<img src = "assets/girl.png" id = "person"/>
+			            		</div>
+
+			            		<div id = "quote-face">
+			            			<p id = "quote"> &#34;I got waitlisted in all of my classes. I literally had to drop all of them and enroll in random classes just to still be considered a student here.&#34;</p>
+			            			<img src = "assets/boy.png" id = "person"/>
+			            		</div>
+			            	</div>
+			            </section>
+
+			            <section id= "Goal">
+			            	<h1>Goal</h1>
+			            	<p>My goal in particular was to scale the interaction patterns to non desktop platforms to make Berkeleytime accessible across all devices. </p>
+			            	<p><span>Priority metrics and KPI&#39;s:</span> Daily active users and mobile website retention rate compared to that of the desktop site.</p>
+			            </section>
+
+			            <section id= "Iterations &#38; User Testing">
+			            	<h1>Iterations &#38; User Testing</h1>
+			            	<p>We followed a task based user testing protocol with 10 students and tested workflows for the following three pages: </p>
+			            	<li> 1. Course catalog </li>
+							<li> 2. Grade distributions</li>
+				  			<li> 3. Enrollment </li>
+				  			<p> &nbsp; </p>
+			            	<p>In our first round of user testing, users were presented with a course catalog that had a side menu for setting filters. Activated filters would then be displayed as pills on the original course catalog screen.</p>
+			            	<img src = "assets/og course cat.png"/>
+			            	<p> &nbsp; </p>
+			            	<p> We witnessed participants run into several usability issues with the previous flow, so we explored different mobile patterns that led to the following flow:</p>
+			            	<img src = "assets/final course cat.png"/>
+			            	<p> &nbsp; </p>
+			            	<p> Moving forward with the grade distrubutions screen, usability testing allowed us to spot <span>where existing patterns used on the desktop interface failed when they were translated to mobile.</span> This was especially prevalent in data visualizations; users found it difficult to interact with graphs and to interpret screens that were text and statistics heavy.</p>
+			            	<p> Below is the evolution of the grade distribution screen as we learned from these observations:</p>
+			            	<img src = "assets/grade evol.png"/>
+			            	<p> &nbsp; </p>
+			            	<p>The evolution of the course enrollment screen was similar to that of the grade distributions screen as users faced similar issues.</p>
+			            	<img src = "assets/enroll evol.png"/>
+			            </section>
+
+			            <section id = "Final Design">
+			            	<h1>Final Design</h1>
+
+			            	<div class = "all-greygifs">
+
+				            	<div class = "grey-with-gif">
+					            	<div id = "grey">
+					            		<h3>Course Catalog</h3>
+					            		<p>Filter and sort through all 12,000+ classes offered at Berkeley by requirements, grades, enrollment, and more.</p>
+					            	</div>
+					            	<img src = "assets/course.gif" id = "bt-gif"/>
+					            </div>
+
+					            <div class = "grey-with-gif">
+					            	<div id = "grey">
+					            		<h3>Grade Distributions</h3>
+					            		<p>View and compare grade distributions for every course.</p>
+										<p>Grades are retrieved and accurately updated from Berkeley&#39;s API.</p>
+					            	</div>
+					            	<img src = "assets/grade.gif" id = "bt-gif"/>
+					            </div>
+
+
+					            <div class = "grey-with-gif">
+					            	<div id = "grey">
+					            		<h3>Enrollment</h3>
+					            		<p>View and compare grade distributions for every course.</p>
+										<p>View real time enrollment updates to monitor class opening and waitlist statuses.</p>
+					            	</div>
+					            	<img src = "assets/enroll.gif" id = "bt-gif"/>
+					            </div>
+							</div>
+						<p> &nbsp; </p>
+						<p>I also got the chance to make the graphic for Berkeleytime&#39;s landing page. Feel free to take a look at it (and the rest of our snazzy site) <a id = "intextlink" href="https://berkeleytime.com/landing" target="_blank">here</a>.</p>
+						<img src = "assets/landing.png"/>
+
+			            </section>
+
+			            <section id = "Results">
+			            	<h1>Results</h1>
+			            	<p>Finalized designs have been handed off to the engineering team and construction is currently underway. <span>Berkeleytime will be available to use across all devices for incoming Fall 2020 students!</span></p>
+			            </section>
+
+				</div>
+	           <p id = footer> made by Janet Xu &copy; 2020</p>
+            </div>
+
+    </body>
+
+    <script>
+	window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
+</script>
+
+
+</html> 
